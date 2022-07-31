@@ -1,0 +1,43 @@
+space invadres step by step
+by: Tomohiro Nishikado in 1978
+net profit: 2000 Millons (2 Billions)
+
+.1 import pygame
+.2 initialize the pygame with pygame.init()
+.3 Define the screen size
+.4 Create the screen
+.5 run the script and show the problem
+with the window
+.6 include the game loop
+.7  add tje Title +
+.8 add the icon from https://www.flaticon.com/
+.9 fill the screen 
+.10 Explain and show the RGB colors
+.11 add the command screen.fill( (r, g, b) )
+run the script and explain the problem with
+update: 
+.12 test some colors combinations.
+.13 Download the space invaders plane
+.14 explain the screen size
+.15 add the player image
+.16 Add the posicion and play with the ubication
+.17 Movement mechanics
+.18 Explain the movement in x and y
+.19 control the movement with the keyboard
+.20 Add condition for horizontal movement
+.21 creating the enemy: space invaders in flaticon
+.22 add a random value for ubication of the enemy
+for doing that import random
+.23 add movement to the enemy (random movement in x)
+.24 change the rate the movement in y
+.25 creating one bullet
+.26 shooting multiple bullets
+.27 the bullet following the space-ship
+.28 Collision detection: include the equation for 
+detect the distance between two points 
+.29 add the score variable
+.30 change the value of x in the enemy for avoid a bug
+.31 
+
+
+

@@ -37,7 +37,9 @@ for doing that import random
 detect the distance between two points 
 .29 add the score variable
 .30 change the value of x in the enemy for avoid a bug
-.31 
+.31 Add multiples enemies
+.32 create lists with the necesary variables
+.33 move the Collision inside the enemy for loop 
 
 
 

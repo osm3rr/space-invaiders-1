@@ -40,6 +40,12 @@ detect the distance between two points
 .31 Add multiples enemies
 .32 create lists with the necesary variables
 .33 move the Collision inside the enemy for loop 
+.34 we define a variable "font" with the font type 
+.35 we define a function for show the score
+.36 we can download extra fonts from https://www.fontspace.com/category/ttf or 
+other web site
+.37 test with other fonts and colors
+
 
 
 

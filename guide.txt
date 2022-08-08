@@ -47,7 +47,7 @@ other web site
 .37 test with other fonts and colors
 .38 add the soound efect one web alternative is: https://pixabay.com/sound-effects
 .39 web app for convert .mp3 to .wav: https://cloudconvert.com/mp3-to-wav
-
+.40 adding the game over text
 
 
 

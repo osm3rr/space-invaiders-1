@@ -3,6 +3,7 @@ from numpy import math
 import pygame
 from random import randint
 import math
+from pygame import mixer
 
 # initialize the pygame
 pygame.init()
@@ -18,6 +19,10 @@ screen = pygame.display.set_mode( size )
 
 # background
 background = pygame.image.load( 'space-bg.png' )
+
+# background sound
+mixer.music.load( 'gamemusic.wav' )
+mixer.music.play( -1 )
 
 # windows title
 pygame.display.set_caption( "Space invaders - osm3rr" )
@@ -59,8 +64,8 @@ bullet_state = "ready"
 # score
 score_value = 0
 
-#font = pygame.font.Font('freesansbold.ttf', 32)
-font = pygame.font.Font('stocky.ttf', 32)
+font = pygame.font.Font('freesansbold.ttf', 32)
+#font = pygame.font.Font('stocky.ttf', 32)
 
 
 text_x = 10
@@ -120,6 +125,8 @@ while running:
                 
             if event.key == pygame.K_SPACE:
                 if bullet_state == "ready":
+                    bullet_sound = mixer.Sound( 'shotgun-firing.wav' )
+                    bullet_sound.play()
                     # get the current x cordinate of the spaceship
                     bullet_x = player_x
                     fire_bullet( bullet_x, bullet_y )
@@ -153,6 +160,9 @@ while running:
         collision =  is_collision( enemy_x[enemy], enemy_y[enemy], bullet_x, bullet_y)
     
         if collision:
+            explosion_sound = mixer.Sound( 'hq-explosion.wav' )
+            explosion_sound.play()
+            
             bullet_y = 480
             bullet_state = "ready"
             score_value += 1
